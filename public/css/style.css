@@ -90,7 +90,6 @@ header .navbar .right {
 }
 .main-body .outer-left {
     /* background-color: red; */
-    /* margin-top: 1.5rem 0 !important; */
     border-right: 1px solid rgb(233, 233, 233);
     padding: 0 6rem;
 }
@@ -222,7 +221,6 @@ header .navbar .right {
 }
 .main-body .left .profile-header .profile-one-liner .social-links span:nth-child(5) {
     font-size: 1.4rem !important;
-    
 }
 
 .main-body .rightt {
@@ -248,7 +246,6 @@ header .navbar .right {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
-
 
 }
 .main-body .rightt .profile {
@@ -367,7 +364,6 @@ header .navbar .right {
     font-weight: 500;
     
 }
-
 
 .main-body .rightt .footer {
     display: flex;
