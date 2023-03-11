@@ -11,9 +11,6 @@ app.use(express.static("public"))
 app.get("/", (req, res) => {
     res.status(200).render("index", {pageTitle : "Blog Page"})
 })
-app.get("/contact", (req, res) => {
-    res.status(200).render("contact", {pageTitle : "Contact"})
-})
 
 
 app.listen(3001, () => {
