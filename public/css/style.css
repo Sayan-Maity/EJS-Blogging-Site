@@ -10,11 +10,6 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.heading {
-    background-color: yellow;
-}
-
-
 
 /* ========  Navbar  ========= */
 header .navbar{
@@ -101,11 +96,10 @@ header .navbar .right {
     border-right: 1px solid rgb(233, 233, 233);
     padding: 0 6rem;
 }
+
 .main-body .outer-left .left {
     max-width: 680px !important;
 }
-
-
 
 .main-body .left .profile-header .membership{
     background-color: #f2f2f2;
@@ -114,6 +108,89 @@ header .navbar .right {
     margin: 1.5rem 0;
     border-radius: 5px;
 }
+.main-body .left .article-body .article-big-heading {
+    font-size: 1.8rem;
+    font-weight: 800;
+    padding: 1rem 0;
+    line-height: 1.2 !important;
+} 
+.main-body .left .article-body {
+    display: flex;
+    flex-direction: column;
+}
+.main-body .left .article-body .article-cover-image {
+    background-image: url("../assets/meme1.jpg");
+    align-self: center;
+    height: 20rem;
+    width: 40rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem 0;
+}
+.main-body .left .article-body ul {
+    padding-left: 4rem;
+    list-style: decimal;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.main-body .left .article-body ul li {
+    padding: 0.5rem 0;
+}
+.main-body .left .article-body ul li,
+.main-body .left .article-body p {
+    line-height: 1.8;
+}
+.main-body .left .article-body .article-small-heading {
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 1rem 0;
+    line-height: 1.2 !important;
+}
+.main-body .left .main-article-tags {
+    padding: 4rem 0;
+}
+.main-body .left .main-article-tags .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.main-body .left .main-article-tags .tags p {
+    background-color: rgb(239, 239, 239);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+}
+.main-body .left .main-article-tags .clap-share-icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+}
+.main-body .left .main-article-tags .clap-share-icon span {
+    color: gray;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
+/* .main-body .left .user-article-suggestion .user-main-suggestion .user-article1 .main-article1 .left p:nth-child(1) {} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-body .left .profile-header .profile-one-liner {
     /* background-color: red; */
     display: flex;
@@ -166,13 +243,20 @@ header .navbar .right {
     
 }
 
-.main-body .right {
+.main-body .rightt {
     /* background-color: yellowgreen ; */
     width: 400px;
     padding: 1rem 3rem 0 2rem;
-    top: 1rem;
+    display: flex !important;
+    flex-direction: column !important;
+    position: sticky !important;
+    top: 1rem !important;
 }
-.main-body .right .membership {
+.main-profile-component-stiky {
+    position: sticky;
+    top: 0;
+}
+.main-body .rightt .membership {
     background-color: #333;
     color: #fff;
     padding: 0.7rem;
@@ -182,13 +266,15 @@ header .navbar .right {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
+
+
 }
-.main-body .right .profile {
+.main-body .rightt .profile {
     display: flex;
     flex-direction: column;
     /* gap: 1rem; */
 }
-.main-body .right .profile .avatar {
+.main-body .rightt .profile .avatar {
     height: 5rem;
     width: 5rem;
     background-image: url("../assets/sayan.jpg");
@@ -198,28 +284,28 @@ header .navbar .right {
     border-radius: 50%;
     margin: 0.5rem 0;
 }
-.main-body .right .profile .name {
+.main-body .rightt .profile .name {
     font-weight: 600 !important;
 }
-.main-body .right .profile .name,
-.main-body .right .profile .follower {
+.main-body .rightt .profile .name,
+.main-body .rightt .profile .follower {
     padding-top: 0.3rem ;
     font-size: 0.9rem;
     font-weight: 500;
 }
-.main-body .right .profile .desc {
+.main-body .rightt .profile .desc {
     font-size: 0.8rem;
     padding: 1rem 0;
     font-weight: 500;
     line-height: 1.4;
 }
-.main-body .right .profile .buttons {
+.main-body .rightt .profile .buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
 }
-.main-body .right .profile .buttons .follow-btn {
+.main-body .rightt .profile .buttons .follow-btn {
     padding: 0.5rem 1rem;
     border: 1px solid green;
     border-radius: 20px;
@@ -228,15 +314,76 @@ header .navbar .right {
     cursor: pointer;
     font-weight: 600;
 }
-.main-body .right .profile .buttons .message-btn {
+.main-body .rightt .profile .buttons .message-btn {
     background-color: green;
     border-radius: 50%;
     padding: 0.3rem 0.4rem;
     color: #fff;
     cursor: pointer;
 }
-.main-body .right .profile .buttons .message-btn span {
+.main-body .rightt .profile .buttons .message-btn span {
     font-size: 1.2rem;
+}
+
+.main-body .rightt .blog-suggestion {
+    padding: 1.5rem 0;
+}
+.main-body .rightt .blog-suggestion p.blog-heading {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+}
+.main-body .rightt .blog-suggestion {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .left {
+    display: flex;
+    flex-direction: column;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .left .bottom .heading {
+    background-color: none !important;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .right .blog-image {
+    height: 3rem;
+    width: 3rem;
+    background-image: url("../assets/suggestion.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .left .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .left .top .avatar {
+    height: 1.2rem;
+    width: 1.2rem;
+    background-image: url("../assets/sayan.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .left .bottom .heading {
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+.main-body .rightt .blog-suggestion a.suggestion1 .left .top .desc p  {
+    font-size: 0.8rem;
+    font-weight: 500;
+    
 }
 
 
@@ -249,7 +396,8 @@ header .navbar .right {
 
 
 
-.main-body .right .footer {
+
+.main-body .rightt .footer {
     display: flex;
     flex-direction: row;
     font-size: 0.7rem;
